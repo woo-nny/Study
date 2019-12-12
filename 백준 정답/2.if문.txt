@@ -1,0 +1,46 @@
+1.
+a ,b =map(int,input().split())
+if(a>b):
+    print(">")
+elif(a<b):
+    print("<")
+elif(a==b):
+    print("==")
+
+2.
+a = int(input())
+if (a>=90):
+    print("A")
+elif(a>=80):
+    print("B")
+elif(a>=70):
+    print("C")
+elif(a>=60):
+    print("D")
+else:
+    print("F")
+
+3.
+a = int(input())
+if ((a%4==0) & ((a%400==0)|(a%100!=0))):
+    print("1")
+else:
+    print("0")
+
+4.
+h,m = map(int,input().split())
+if(h==0):
+    h = 24
+if(m-45<0):
+    h -=1
+    m=(m+60)-45
+else:
+    m=m-45
+print(h,m)
+
+5.
+a,b,c = map(int,input().split())
+num=[a,b,c]
+num.sort()
+print(num[1])
+

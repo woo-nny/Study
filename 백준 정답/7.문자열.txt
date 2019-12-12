@@ -1,0 +1,6 @@
+1.
+import sys
+
+code = str(input())
+
+print(ord(code))

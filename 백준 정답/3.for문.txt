@@ -1,0 +1,79 @@
+1.
+n = int(input())
+for num in range(1,10):
+    print("{} * {} = {}".format(n,num,n*num))
+
+2.
+N = int(input())
+
+for i in range(N):
+    a, b = map(int, input().split())
+    print(a + b)
+
+3.
+import sys
+ 
+inp = int(input())
+for i in range(inp):
+    a,b = map(int, sys.stdin.readline().split())
+    print(a+b)
+
+4.
+a = int(input())
+sum=0
+for a in range(1,a+1,1):
+    sum=sum+a
+print(sum)
+
+5.
+a = int(input())
+for num in range(1,a+1,1):
+    print(num)
+
+6.
+a = int(input())
+for num in range(a,0,-1):
+    print(num)
+
+7.
+import sys
+ 
+inp = int(input())
+for i in range(inp):
+    a,b = map(int, sys.stdin.readline().split())
+    print("Case #{}: {}".format(int(i+1),a+b))
+
+8.
+import sys
+ 
+inp = int(input())
+for i in range(inp):
+    a,b = map(int, sys.stdin.readline().split())
+    print("Case #{}: {} + {} = {}".format(int(i+1),a,b,a+b))
+
+9.
+count=int(input())
+a = "*"
+
+for num in range(1,count+1,1):
+    print(a*num)
+
+10.
+count=int(input())
+
+
+for i in range(1,count+1):
+    for j in range(count-i):
+        print(" ",end="")
+    for j in range(i):
+        print("*",end="")
+    print()
+
+11.
+import sys
+a,b = map(int,input().split())
+
+c=map(int,sys.stdin.readline().split())
+for num in c:
+    if(num<b):
+        print(num,end=' ')
